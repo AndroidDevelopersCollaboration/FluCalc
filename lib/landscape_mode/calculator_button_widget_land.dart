@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/all.dart';
 import 'package:math_expressions/math_expressions.dart';
 
-class CalculatorButtonWidget extends ConsumerWidget {
-  const CalculatorButtonWidget(
+class CalculatorButtonWidgetLand extends ConsumerWidget {
+  const CalculatorButtonWidgetLand(
       {Key? key, required this.buttonText, required this.textColor})
       : super(key: key);
 
@@ -56,15 +56,15 @@ class CalculatorButtonWidget extends ConsumerWidget {
 
       // context.read(calculatorEquation).state = equation + buttonText,
       child: Container(
-        height: 65,
-        width: 65,
+        height: 55,
+        width: 70,
         padding: EdgeInsets.all(5),
         decoration: BoxDecoration(
             color: buttonColor, borderRadius: BorderRadius.circular(20)),
         child: Center(
           child: Text(
             buttonText,
-            style: TextStyle(fontSize: 30, color: textColor),
+            style: TextStyle(fontSize: 20, color: textColor),
           ),
         ),
       ),

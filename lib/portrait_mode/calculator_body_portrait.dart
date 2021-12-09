@@ -3,9 +3,9 @@ import 'package:calculator/helpers/state_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/all.dart';
 
-import 'calculator_buttons.dart';
+import '../widgets/calculator_buttons.dart';
 
-class CalculatorBody extends ConsumerWidget {
+class CalculatorBodyPortrait extends ConsumerWidget {
 
   String equation = '0';
   String result = '0';
@@ -26,7 +26,6 @@ class CalculatorBody extends ConsumerWidget {
     child: Column(
       children: [
        Expanded(
-         flex: 1,
          child: SingleChildScrollView(
            child: Column(
              children: [

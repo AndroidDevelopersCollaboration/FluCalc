@@ -6,13 +6,13 @@ import 'package:flutter_svg/svg.dart';
 import '../helpers/colors.dart';
 import '../helpers/sizes.dart';
 
-class TabWidget extends ConsumerWidget {
+class TabWidgetLandscape extends ConsumerWidget {
   @override
   Widget build(BuildContext context, watch) {
     var selectedTabColor = watch(tabColor).state;
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
-      width: 150,
+      width: 120,
       decoration: BoxDecoration(
           color: selectedTabColor,
           borderRadius: BorderRadius.circular(20)),
@@ -28,7 +28,7 @@ class TabWidget extends ConsumerWidget {
             widgetPosition: 1,
             imageLightTheme: 'night_icon_white.svg',
             imageDarkTheme: 'night_icon_dark.svg',
-            height: 25,
+            height: 20,
           ),
         ],
       ),
@@ -42,7 +42,7 @@ class ThemeSelector extends ConsumerWidget {
       required this.widgetPosition,
       required this.imageDarkTheme,
       required this.imageLightTheme,
-      this.height = 30})
+      this.height = 25})
       : super(key: key);
 
   final int widgetPosition;

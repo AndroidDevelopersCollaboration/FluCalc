@@ -26,11 +26,12 @@ class CalculatorButtons extends StatelessWidget {
         decoration: BoxDecoration(
           color: backgroundColor,
           borderRadius: const BorderRadius.only(
-            topRight: Radius.circular(20),
-            topLeft: Radius.circular(20),
+            topRight: Radius.circular(30),
+            topLeft: Radius.circular(30),
           ),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -52,7 +53,6 @@ class CalculatorButtons extends StatelessWidget {
                     textColor: GlobalColors.primaryOrange,
                   ),
                 ]),
-            SizedBox(height: 15),
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -73,7 +73,6 @@ class CalculatorButtons extends StatelessWidget {
                     textColor: GlobalColors.primaryOrange,
                   ),
                 ]),
-            SizedBox(height: 15),
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -94,7 +93,6 @@ class CalculatorButtons extends StatelessWidget {
                     textColor: GlobalColors.primaryOrange,
                   ),
                 ]),
-            SizedBox(height: 15),
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -115,12 +113,11 @@ class CalculatorButtons extends StatelessWidget {
                     textColor: GlobalColors.primaryOrange,
                   ),
                 ]),
-            SizedBox(height: 15),
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CalculatorButtonWidget(
-                    buttonText: '',
+                    buttonText: '⌫',
                     textColor: changeTextColor,
                   ),
                   CalculatorButtonWidget(
